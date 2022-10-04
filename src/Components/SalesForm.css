@@ -96,6 +96,15 @@ select:-webkit-autofill {
   -webkit-text-fill-color: black !important;
 }
 
+/* ------datepicker calender------------- */
+
+.react-datepicker-popper {
+    visibility: hidden;
+}
+
+/* -------------------------------------- */
+
+
 /* --legend tag------------ */
 legend.float-none.w-auto.p-2 {
     font-size: 13px;
@@ -139,14 +148,14 @@ textarea:focus {
     /* border: 1px solid; */
     border: 2px solid darkgray;
     margin-left: 0px;
-    width: 31.6%;
+    width: 31.8%;
 }
 
 .c4.col-12 {
     height: 64px;
     /* border: 1px solid; */
     border: 2px solid darkgray;
-    width: 106.8%;
+    width: 107.2%;
     margin-left: -13px;
     margin-top: 16px;
 }
@@ -182,3 +191,22 @@ button.Sales_btn.px-3 {
 /* .quit.col-1.mt-2 {
     margin-left: 83px;
 } */
+
+.hold.col-1.mt-2 {
+    margin-left: 16%;
+}
+
+.update.col-1.mt-2 {
+    margin-left: -11px;
+}
+
+.scheme.col-1.mt-2 {
+    margin-left: -21px;
+}
+.save.col-1.mt-2 {
+    margin-left: -67px;
+}
+
+.quit.col-1.mt-2 {
+    margin-left: -68px;
+}

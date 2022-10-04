@@ -3,6 +3,21 @@ import "./Table.css"
 import DatalistInput from "react-datalist-input";
 
 const Table = () => {
+
+  const handleTotal =(e)=> {  
+
+    let inputs = document.querySelectorAll('[id^="comp"]');
+
+    let totalVal= 0;
+    for (var i = 0; i < inputs.length ; i++) {
+      if(parseFloat(inputs[i].value))
+      totalVal += parseFloat(inputs[i].value);
+        console.log(totalVal);
+    }
+
+    document.getElementById('total').innerHTML = totalVal;
+}
+
   return (
     <div>
     <table className="table-responsive datatable" id="table">
@@ -133,10 +148,11 @@ const Table = () => {
           </td>
           <td className="amount">
             <input
+            onChange={handleTotal}
               className="amount"
               type="Number"
-              id="amount"
-              name="amount"  
+              id="comp"
+              name="comp"  
             />
           </td>
           <td className="amount">
@@ -208,10 +224,11 @@ const Table = () => {
           </td>
           <td className="amount">
             <input
+             onChange={handleTotal}
               className="amount"
               type="Number"
-              id="amount"
-              name="amount"  
+              id="comp"
+              name="comp"  
             />
           </td>
           <td className="amount">
@@ -279,10 +296,11 @@ const Table = () => {
           </td>
           <td className="amount">
             <input
+             onChange={handleTotal}
               className="amount"
               type="Number"
-              id="amount"
-              name="amount"  
+              id="comp"
+              name="comp"  
             />
           </td>
           <td className="amount">
@@ -844,7 +862,7 @@ const Table = () => {
         </tr>
       </tbody>
     </table>
-    <span id ="total"></span>
+    {/* <span id ={props.total}></span> */}
   </div>
   )
 }

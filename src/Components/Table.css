@@ -101,6 +101,14 @@ input#amount {
     border: 0px;
     color: black;
 }
+
+input#comp {
+    width: 115px;
+    background: white;
+    border: 0px;
+    color: black;
+}
+
 td.amount {
     width: 134px;
     border: 1px solid;
